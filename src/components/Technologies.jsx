@@ -133,9 +133,9 @@ export default function Technologies() {
                     {/* DERECHA — texto */}
                     <div className="flex flex-col items-center">
                         <div className="relative text-center">
-                            <h3 className="text-4xl md:text-5xl font-bold text-accent flex justify-center items-center gap-4">
-                                <Cpu className="w-12 h-12 md:w-14 md:h-14" />
-                                <span className="bg-gradient-to-r from-accent via-blue-400 to-accent bg-clip-text text-transparent animate-wave font-[Inter]">
+                            <h3 className="text-4xl md:text-5xl font-bold flex justify-center items-center gap-4">
+                                <Cpu className="w-12 h-12 md:w-14 md:h-14 text-accent" />
+                                <span className="animated-gradient-text font-[Inter]">
                                     {titleText}
                                     <span className="animate-pulse text-accent">|</span>
                                 </span>
@@ -189,6 +189,31 @@ export default function Technologies() {
           .animate-wave {
             background-size: 200% auto;
             animation: wave 3s ease-in-out infinite;
+          }
+
+          .animated-gradient-text {
+            background: linear-gradient(
+              90deg,
+              var(--color-gradient1),
+              var(--color-accent),
+              var(--color-gradient2),
+              var(--color-accent),
+              var(--color-gradient1)
+            );
+            background-size: 300% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient-wave 4s ease-in-out infinite;
+          }
+
+          @keyframes gradient-wave {
+            0%, 100% {
+              background-position: 0% 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
           }
         `}</style>
             </div>
