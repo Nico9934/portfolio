@@ -44,7 +44,7 @@ export default function Navbar() {
 
       {/* Menú móvil */}
       <div
-        className={`fixed bg-red-400 top-0 right-0 h-screen w-[70%] sm:w-[50%] md:hidden bg-secondary/95 backdrop-blur-lg shadow-2xl transform transition-transform duration-500 ease-in-out ${menuOpen ? "translate-x-0" : "translate-x-full"
+        className={`fixed top-0 right-0 h-screen w-[70%] sm:w-[50%] md:hidden bg-secondary/95 backdrop-blur-lg shadow-2xl transform transition-transform duration-500 ease-in-out ${menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
       >
         <div className="flex flex-col items-end px-8 pt-24 space-y-8 text-lg font-medium">

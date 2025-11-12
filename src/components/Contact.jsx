@@ -92,52 +92,43 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto w-full">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* 🧭 Izquierda: Título y links */}
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center">
             <div className="relative">
-              <h3 className="text-4xl md:text-5xl font-bold text-accent flex flex-col items-center md:items-start gap-4">
+              <h3 className="text-4xl md:text-5xl font-bold text-accent flex flex-col items-center gap-4">
                 <Mail className="w-12 h-12 md:w-14 md:h-14" />
-                <span className="bg-gradient-to-r from-accent via-blue-400 to-accent bg-clip-text text-transparent animate-wave font-[Inter] text-center md:text-left">
+                <span className="bg-gradient-to-r from-accent via-blue-400 to-accent bg-clip-text text-transparent animate-wave font-[Inter] text-center">
                   {titleText}
                   <span className="animate-pulse text-accent">|</span>
                 </span>
               </h3>
 
-              <p className="mt-8 text-gray-300 leading-relaxed text-lg font-light max-w-md font-[Inter] text-center md:text-left">
+              <p className="mt-8 text-gray-300 leading-relaxed text-lg font-light max-w-md font-[Inter] text-center">
                 ¿Tenés un proyecto en mente? Me encantaría escuchar tus ideas y ver cómo podemos
                 trabajar juntos para hacerlas realidad.
               </p>
 
-              <div className="mt-8 space-y-4">
+              <div className="mt-8 flex gap-4 justify-center">
                 <a
                   href="mailto:nico9934@gmail.com"
-                  className="flex items-center gap-3 text-gray-300 hover:text-accent transition-colors font-light"
+                  className="p-4 bg-primary/50 rounded-lg border border-gray-700 hover:border-accent transition-all hover:scale-110 group"
                 >
-                  <div className="p-3 bg-primary/50 rounded-lg border border-gray-700">
-                    <Mail className="w-5 h-5 text-accent" />
-                  </div>
-                  <span>nico9934@gmail.com</span>
+                  <Mail className="w-6 h-6 text-accent group-hover:scale-110 transition-transform" />
                 </a>
                 <a
                   href="https://wa.me/5491166809127"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-gray-300 hover:text-accent transition-colors font-light"
+                  className="p-4 bg-primary/50 rounded-lg border border-gray-700 hover:border-accent transition-all hover:scale-110 group"
                 >
-                  <div className="p-3 bg-primary/50 rounded-lg border border-gray-700">
-                    <MessageSquare className="w-5 h-5 text-accent" />
-                  </div>
-                  <span>WhatsApp</span>
+                  <MessageSquare className="w-6 h-6 text-accent group-hover:scale-110 transition-transform" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/nicolas-rolon/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-gray-300 hover:text-accent transition-colors font-light"
+                  className="p-4 bg-primary/50 rounded-lg border border-gray-700 hover:border-accent transition-all hover:scale-110 group"
                 >
-                  <div className="p-3 bg-primary/50 rounded-lg border border-gray-700">
-                    <Linkedin className="w-5 h-5 text-accent" />
-                  </div>
-                  <span>LinkedIn</span>
+                  <Linkedin className="w-6 h-6 text-accent group-hover:scale-110 transition-transform" />
                 </a>
               </div>
             </div>

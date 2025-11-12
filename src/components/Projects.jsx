@@ -61,11 +61,11 @@ export default function Projects() {
   return (
     <section id='projects' className='min-h-screen flex flex-col justify-center py-20 px-4 md:px-8 bg-primary'>
       <div className='max-w-6xl mx-auto w-full'>
-        <h3 className='text-4xl font-bold mb-4 text-accent flex items-center gap-3 justify-center md:justify-start'>
+        <h3 className='text-4xl font-bold mb-4 text-accent flex items-center gap-3 justify-center'>
           <Rocket className="w-8 h-8" />
           Proyectos
         </h3>
-        <p className='text-gray-400 mb-12 text-lg font-light text-center md:text-left'>Algunos de mis trabajos más destacados</p>
+        <p className='text-gray-400 mb-12 text-lg font-light text-center'>Algunos de mis trabajos más destacados</p>
 
         <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-3'>
           {projects.map((p, i) => (

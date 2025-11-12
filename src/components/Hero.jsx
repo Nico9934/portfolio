@@ -77,7 +77,7 @@ export default function Hero() {
   }, [currentCodeIndex, isTyping, userName]);
 
   return (
-    <section className='flex flex-col md:flex-row justify-center items-center min-h-screen px-4 md:px-8 lg:px-16 gap-8 py-8'>
+    <section className='flex flex-col md:flex-row justify-center items-center min-h-screen px-4 md:px-8 lg:px-16 gap-8 py-8 pt-24 md:pt-8'>
       {/* Consola - Lado Izquierdo */}
       <div className='w-full md:w-1/2 max-w-2xl'>
         {/* Input para el nombre */}
@@ -113,24 +113,26 @@ export default function Hero() {
       </div>
 
       {/* Información Personal - Lado Derecho */}
-      <div className='w-full md:w-1/2 text-center md:text-right'>
-        <h1 className='text-5xl md:text-7xl font-bold mb-4 relative'>
+      <div className='w-full md:w-1/2 text-right'>
+        <h1 className='text-5xl md:text-7xl font-bold mb-4 relative text-right'>
           {/* Efecto de gradiente animado wave */}
           <span className='inline-block animated-gradient-text'>
             {displayedTitle}
             {!titleTypingComplete && <span className='animate-pulse'>|</span>}
           </span>
         </h1>
-        <h2 className='text-2xl md:text-3xl font-medium mb-6 animated-gradient-text'>
+        <h2 className='text-2xl md:text-3xl font-medium mb-6 animated-gradient-text text-right'>
           Hago páginas web y aplicaciones
         </h2>
-        <p className='text-lg mb-8 max-w-xl leading-relaxed font-light md:ml-auto animated-gradient-text'>
+        <p className='text-lg mb-8 max-w-xl leading-relaxed font-light ml-auto animated-gradient-text text-right'>
           Soy un apasionado por crear soluciones para personas y comercios. Trabajo con distintos lenguajes de programación.
           Convierto tus ideas, en realidad.
         </p>
-        <a href='#projects' className='inline-block bg-accent text-black px-8 py-3 rounded-md font-bold hover:opacity-90 transition-all hover:scale-105'>
-          Ver proyectos
-        </a>
+        <div className='text-right'>
+          <a href='#projects' className='inline-block bg-accent text-black px-8 py-3 rounded-md font-bold hover:opacity-90 transition-all hover:scale-105'>
+            Ver proyectos
+          </a>
+        </div>
       </div>
 
       {/* Estilos para el gradiente animado */}

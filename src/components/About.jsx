@@ -53,17 +53,17 @@ export default function About() {
       <div className='max-w-6xl mx-auto w-full'>
         <div className='grid md:grid-cols-2 gap-12 items-center'>
           {/* Lado Izquierdo - Título "Sobre mí" */}
-          <div className='flex flex-col items-center md:items-start'>
+          <div className='flex flex-col items-center'>
             <div className='relative'>
-              <h3 className='text-4xl md:text-5xl font-bold text-accent flex flex-col items-center md:items-start gap-4'>
+              <h3 className='text-4xl md:text-5xl font-bold text-accent flex flex-col items-center gap-4'>
                 <Lightbulb className="w-12 h-12 md:w-14 md:h-14" />
-                <span className='bg-gradient-to-r from-accent via-blue-400 to-accent bg-clip-text text-transparent animate-wave font-[Inter] text-center md:text-left'>
+                <span className='bg-gradient-to-r from-accent via-blue-400 to-accent bg-clip-text text-transparent animate-wave font-[Inter] text-center'>
                   {titleText}<span className="animate-pulse text-accent">|</span>
                 </span>
               </h3>
 
               {/* Iconos decorativos */}
-              <div className='mt-8 flex gap-6 justify-center md:justify-start'>
+              <div className='mt-8 flex gap-6 justify-center'>
                 <div className='p-4 bg-primary/50 rounded-xl border border-gray-700 hover:border-accent transition-all hover:scale-110 cursor-pointer'>
                   <Code className="w-8 h-8 text-accent" />
                 </div>

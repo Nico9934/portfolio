@@ -18,7 +18,7 @@ export default function GithubActivity() {
                     <div className="col-span-12 bg-secondary/50 p-6 rounded-xl border border-gray-700 hover:border-accent transition-all hover:scale-[1.02] group">
                         <div className="flex items-center gap-2 mb-4">
                             <Activity className="w-5 h-5 text-accent" />
-                            <h4 className="text-lg font-semibold text-white">Contribuciones del año</h4>
+                            <h4 className="text-base md:text-lg font-semibold text-white">Contribuciones del año</h4>
                         </div>
                         <img
                             src="https://ghchart.rshah.org/38bdf8/nico9934"
@@ -35,7 +35,7 @@ export default function GithubActivity() {
                     <div className="col-span-12 lg:col-span-8 bg-secondary/50 p-6 rounded-xl border border-gray-700 hover:border-accent transition-all hover:scale-[1.02] group">
                         <div className="flex items-center gap-2 mb-4">
                             <GitBranch className="w-5 h-5 text-accent" />
-                            <h4 className="text-lg font-semibold text-white">Estadísticas generales</h4>
+                            <h4 className="text-base md:text-lg font-semibold text-white">Estadísticas generales</h4>
                         </div>
                         <img
                             src="https://github-readme-stats.vercel.app/api?username=nico9934&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1e293b&title_color=38bdf8&icon_color=38bdf8&text_color=94a3b8"
@@ -48,7 +48,7 @@ export default function GithubActivity() {
                     <div className="col-span-12 lg:col-span-4 bg-secondary/50 p-6 rounded-xl border border-gray-700 hover:border-accent transition-all hover:scale-[1.02] group">
                         <div className="flex items-center gap-2 mb-4">
                             <Code2 className="w-5 h-5 text-accent" />
-                            <h4 className="text-lg font-semibold text-white">Lenguajes</h4>
+                            <h4 className="text-base md:text-lg font-semibold text-white">Lenguajes</h4>
                         </div>
                         <img
                             src="https://github-readme-stats.vercel.app/api/top-langs/?username=nico9934&layout=compact&theme=tokyonight&hide_border=true&bg_color=1e293b&title_color=38bdf8&text_color=94a3b8"
@@ -61,7 +61,7 @@ export default function GithubActivity() {
                     <div className="col-span-12 md:col-span-6 bg-secondary/50 p-6 rounded-xl border border-gray-700 hover:border-accent transition-all hover:scale-[1.02] group">
                         <div className="flex items-center gap-2 mb-4">
                             <GitCommit className="w-5 h-5 text-accent" />
-                            <h4 className="text-lg font-semibold text-white">Racha de commits</h4>
+                            <h4 className="text-base md:text-lg font-semibold text-white">Racha de commits</h4>
                         </div>
                         <img
                             src="https://github-readme-streak-stats.herokuapp.com?user=nico9934&theme=tokyonight&hide_border=true&background=1e293b&ring=38bdf8&fire=38bdf8&currStreakLabel=38bdf8"
@@ -74,7 +74,7 @@ export default function GithubActivity() {
                     <div className="col-span-12 md:col-span-6 bg-secondary/50 p-6 rounded-xl border border-gray-700 hover:border-accent transition-all hover:scale-[1.02] group">
                         <div className="flex items-center gap-2 mb-4">
                             <Star className="w-5 h-5 text-accent" />
-                            <h4 className="text-lg font-semibold text-white">Perfil detallado</h4>
+                            <h4 className="text-base md:text-lg font-semibold text-white">Perfil detallado</h4>
                         </div>
                         <img
                             src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=nico9934&theme=tokyonight"

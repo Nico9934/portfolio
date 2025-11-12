@@ -98,7 +98,7 @@ export default function Technologies() {
     }, [isVisible]);
 
     return (
-        <section ref={sectionRef} id="technologies" className="min-h-screen flex flex-col justify-center py-24 px-8 bg-primary">
+        <section ref={sectionRef} id="technologies" className="min-h-screen flex flex-col justify-center py-12 md:py-24 px-8 bg-primary">
             <div className="max-w-6xl mx-auto w-full">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
 
@@ -131,9 +131,9 @@ export default function Technologies() {
                     </div>
 
                     {/* DERECHA — texto */}
-                    <div className="flex flex-col items-center md:items-end">
-                        <div className="relative text-center md:text-right">
-                            <h3 className="text-4xl md:text-5xl font-bold text-accent flex justify-end items-be md:items-end gap-4">
+                    <div className="flex flex-col items-center">
+                        <div className="relative text-center">
+                            <h3 className="text-4xl md:text-5xl font-bold text-accent flex justify-center items-center gap-4">
                                 <Cpu className="w-12 h-12 md:w-14 md:h-14" />
                                 <span className="bg-gradient-to-r from-accent via-blue-400 to-accent bg-clip-text text-transparent animate-wave font-[Inter]">
                                     {titleText}
@@ -141,7 +141,7 @@ export default function Technologies() {
                                 </span>
                             </h3>
 
-                            <p className="mt-8 text-gray-300 leading-relaxed text-lg font-light max-w-md font-[Inter]">
+                            <p className="mt-8 text-gray-300 leading-relaxed text-lg font-light max-w-md font-[Inter] text-center">
                                 Como desarrollador Full Stack,{" "}
                                 <span className="text-accent font-medium">
                                     combino tecnologías del frontend y backend{" "}
